@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color:white" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="austinburch.LifeMed.med.view.NewPatient">
+   <left>
+      <AnchorPane prefHeight="721.0" prefWidth="1258.0" style="-fx-background-color:white" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="188.0" prefHeight="40.0" prefWidth="142.0" text="First Name:" textAlignment="CENTER" wrapText="true">
+             <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="264.0" prefHeight="40.0" prefWidth="142.0" text="Last Name:" textAlignment="CENTER" wrapText="true">
+            	<font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="146.0" layoutY="336.0" prefHeight="40.0" prefWidth="83.0" text="Age:" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="104.0" layoutY="416.0" prefHeight="40.0" prefWidth="113.0" text="Diagnosis:" textAlignment="CENTER" wrapText="true">
+             <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            
+             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="499.0" prefHeight="40.0" text="Doctor: " textAlignment="CENTER" wrapText="true">
+             <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            
+             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="302.0" layoutY="45.0" prefHeight="74.0" prefWidth="763.0" text="New Patient">
+               <font>
+                  <Font name="Arial" size="64.0" />
+               </font>
+            </Label>
+            
+           
+            
+            <ComboBox fx:id="nameBox" layoutX="250.0" layoutY="491.0" onAction="#onNameBoxAction" prefHeight="51.0" prefWidth="294.0" />
+            
+            <TextField fx:id="firstField" layoutX="250.0" layoutY="182.0" onAction="#setFirstText" prefHeight="51.0" promptText="First Name" AnchorPane.bottomAnchor="488.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="182.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </TextField>
+            
+            <TextField fx:id="lastField" layoutX="250.0" layoutY="258.0" onAction="#setLastText" prefHeight="51.0" prefWidth="431.0" promptText="Last Name" AnchorPane.bottomAnchor="412.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="258.0">
+            <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </TextField>
+               
+            <TextField fx:id="ageField" layoutX="250.0" layoutY="332.0" onAction="#setAgeText" prefHeight="51.0" promptText="Age" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="330.0">
+            <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </TextField>
+            
+            <TextField fx:id="diagnosisField" layoutX="250.0" layoutY="409.0" onAction="#setDiagnosisText" prefHeight="51.0" promptText="Diagnosis" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="410.0">
+            <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+           </TextField>
+            
+            <ImageView fitHeight="173.0" fitWidth="288.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../resources/LifeMed3.PNG" />
+               </image>
+            </ImageView>
+            
+           
+            <Button fx:id="addBtn" layoutX="321.0" layoutY="596.0" mnemonicParsing="false" onAction="#onAddBtnAction" prefHeight="51.0" prefWidth="115.0" text="Add" />
+            
+             <Button fx:id="backBtn" layoutX="465.0" layoutY="596.0" mnemonicParsing="false" onAction="#onBackBtnAction" prefHeight="51.0" prefWidth="125.0" text="Back" />
+             
+            <Button fx:id="logOutBtn" layoutX="1060.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLogOutBtnAction" prefHeight="51.0" prefWidth="125.0" text="Log Out" />
+           
+            <Text fx:id="drError" fill="#e15353" layoutX="256.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select a Doctor" visible="false">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+            
+            
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

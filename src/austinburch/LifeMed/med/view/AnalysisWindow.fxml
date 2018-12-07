@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="austinburch.LifeMed.med.view.AnalysisWindow">
+   <children>
+      <Button fx:id="logOutBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="1118.0" layoutY="14.0" maxHeight="51.0" maxWidth="118.0" mnemonicParsing="false" onAction="#onLogOutBtnAction" prefHeight="51.0" prefWidth="118.0" text="Log Out" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font></Button>
+      <Button fx:id="backBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="1118.0" layoutY="79.0" maxHeight="51.0" maxWidth="118.0" mnemonicParsing="false" onAction="#onBackBtnAction" prefHeight="51.0" prefWidth="118.0" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font></Button>
+      <Label layoutX="467.0" layoutY="52.0" text="Office Analysis">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vbox" layoutX="200.0" layoutY="171.0" prefHeight="516.0" prefWidth="853.0">
+         <children>
+            <Pane fx:id="paneView" prefHeight="605.0" prefWidth="940.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
